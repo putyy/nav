@@ -1,0 +1,20 @@
+{
+  "name": "gowas-nav",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node script/display.js && vite",
+    "build": "node script/display.js && vite build --emptyOutDir",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "md5": "^2.3.0",
+    "sass": "^1.63.6",
+    "sass-loader": "^13.3.2",
+    "vite": "^4.3.9"
+  }
+}
