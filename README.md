@@ -1,5 +1,15 @@
 #  html + css + jquery 实现的极简导航
 ![](show.png)
+
+## 使用
+>  依赖nodejs、yarn环境，自行安装
+```shell
+git clone https://github.com/putyy/nav
+yarn install
+# yarn run build
+yarn run dev 
+```
+
 ## 功能概览
 - [x] 切换模式
 - [x] 切换主题

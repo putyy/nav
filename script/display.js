@@ -59,6 +59,11 @@ data.forEach((dataItem, k1) => {
     }
 });
 
+let script = ''
+if (fs.existsSync(__dirname + '/script.js')) {
+    script = fs.readFileSync(__dirname + '/script.js', 'utf-8');
+}
+
 let indexHtml = fs.readFileSync(__dirname + '/../src/index-cp.html', 'utf-8');
 indexHtml = strReplace(
     [
@@ -87,7 +92,7 @@ indexHtml = strReplace(
         oneMenuHtml,
         twoMenuHtml,
         navsHtml,
-        '',
+        script,
     ],
     indexHtml
 );

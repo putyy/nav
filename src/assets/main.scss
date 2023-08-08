@@ -228,42 +228,43 @@ body{
         .item{
             position: relative;
             .action{
-                padding-top: 4px;
+                padding-top: .4rem;
             }
             .action:hover{
                 color: #dcdbdb;
             }
             .action:last-child{
-                padding: 4px;
+                padding: .4rem;
             }
             .tip{
                 position: absolute;
                 z-index: 1;
                 display: flex;
-                width: 6rem;
+                width: max-content;
                 background-color: #4083c9;
-                top: 34px;
+                top: 3.4rem;
                 color: white;
-                padding: 2px;
-                border-radius: 5px;
-                left: -12px;
+                padding: .2rem;
+                border-radius: .5rem;
+                left: -1.2rem;
                 align-items: center;
                 align-content: center;
                 flex-direction: column;
                 text-align: center;
+                font-size: 1.2rem;
             }
             .triangle{
                 position: absolute;
                 z-index: 1;
                 margin: 0;
-                border-width: 8px;
+                border-width: .8rem;
                 border-style: solid;
                 border-color: transparent transparent #3d81ce transparent;
                 padding: 0;
                 width: 0;
                 height: 0;
-                top: -16px;
-                left: 18px;
+                top: -1.6rem;
+                left: 1.8rem;
             }
         }
     }
