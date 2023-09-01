@@ -66,7 +66,10 @@ window.addEventListener('DOMContentLoaded', function () {
         async function getCategory() {
             let cache = localStorage.getItem(appDataCacheKey);
             if (cache) {
-                return JSON.parse(cache);
+                let res = JSON.parse(cache);
+                if (window.gowas_version && window.gowas_version === res.version) {
+                    return res;
+                }
             }
             await $.get('/main.json', function (res) {
                 cache = res

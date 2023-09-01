@@ -79,6 +79,7 @@ indexHtml = strReplace(
         '__two_menu__',
         '__navs__',
         '__script__',
+        '__version__',
     ],
     [
         rest.meta_title,
@@ -93,6 +94,7 @@ indexHtml = strReplace(
         twoMenuHtml,
         navsHtml,
         script,
+        rest.version,
     ],
     indexHtml
 );
